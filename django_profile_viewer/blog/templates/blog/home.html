@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'blog/CSS/global.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    
+    <header>
+            <nav>
+                <div class="heading">
+                    <img src="{% static 'blog/images/primU.png' %}" alt="app logo" id="logo">
+                    <h1>Profile viewer</h1>
+                </div>
+    
+                <ul class="navLinks">
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Services</a> </li>
+                    <li> <a href="#">Blog</a> </li>
+                    <li> <a href="#">Projects</a> </li>
+                </ul>
+    
+                <div class="burger">
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                    <div class="bars"></div>
+                </div>
+    
+            </nav>
+        </header>
+       
+    <div class="main">
+        <h4>Django profile viewer project</h4>
+        <p><strong>Wonderful!!! Here we are!</strong> <br> Enjoy your stay here!</p>
+        
+        <div style="margin-top: 20px;" class="img-profile">
+            <img style="width:30vw;" src="https://pic.onlinewebfonts.com/svg/img_508619.png" alt="">
+        </div>
+
+        <div class="User-profile">
+
+            <h4>Your Profile</h4>
+
+            <img src="{% static 'blog/images/matrix.jpg' %}" alt="Your Profile Image" id="profile-image">
+            <br>
+            <p><strong>Name: </strong> #######</p>
+            <br>
+            <p><strong>Email: </strong>#######</p>
+            <br>
+            <p><strong>Gender: </strong>#######</p>
+            <br>
+            <br>
+            <p>#### Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, itaque consectetur unde, aliquam explicabo voluptatum, cupiditate minima molestias t ####</p>
+
+        </div>
+
+        <div class="outro">
+            <p>Thank you for reviewing and using our site! <br>
+                <em><q>Keep up the good heart!!</q></em> </p>
+            <p><strong>Impressed? <a href="#">Hire Developer <i style="color: #000000;" class="fa fa-laptop"></i></a></strong></p> <br>
+            <p><strong>Give us feedback...</strong> <br>
+                <!--Beggin Comment form-->
+                <form action="/" method="POST" id="comment">
+                    <label for="feedback">
+                        <input style="height: 5vh; border-radius: 3%; text-align: center;" type="text" placeholder="Rate developer">
+                    </label>
+                    <br>
+                    <input style="height: 4vh; width: 15vw; text-align: center;" type="submit" value="Rate Us">
+                </form>
+                <!--End comment form-->
+                <br>
+            Thank You!! </p>
+            
+        </div>
+
+    </div>
+
+    <div class="dev-footer">
+        <ul class="footer-links">
+            <h4>Developer</h4>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="connect-developer">
+            <h4>Connect Us</h4>
+            <li><a href="#">Facebook <i style="color: #0000ff;" class="fa fa-facebook"></i> </a></li>
+            <li><a href="#">Twitter <i style="color: #0000ff;" class="fa fa-twitter"></i> </a></li>
+            <li><a href="#">WhatsApp <i style="color: #00ff00" class="fa fa-whatsapp"></i> </a></li>
+            <li><a href="#">GitHub <i style="color: #ff7300;" class="fa fa-github"></i> </a></li>
+            <li><a href="#">Website <i style="color: #0000ff;" class="fa fa-firefox"></i></a></li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <img src="{% static 'blog/images/primU.png' %}" alt="dev-logo">
+        <p>copyright of primU developers &copy; 2021</p>
+    </footer>
+
+
+</body>
+<script type="text/javascript" src="{% static 'blog/javascript/script.js' %}"></script>
+
+</html>
