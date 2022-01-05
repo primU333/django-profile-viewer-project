@@ -19,7 +19,7 @@
             </div>
 
             <ul class="navLinks">
-                <li> <a href="#">Home</a> </li>
+                <li> <a href="{% url 'blog-home' %}">Home</a> </li>
                 <li> <a href="#">Services</a> </li>
                 <li> <a href="#">Blog</a> </li>
                 <li> <a href="#">Projects</a> </li>
@@ -68,6 +68,12 @@
 
                 <br>
 
+                <label for="email">Email <br>
+                    <input style="height: 5vh; border-radius:3%; text-align: center;" type="email" placeholder="Enter your email" required>
+                </label>
+                
+                <br>
+
                 <label for="password"> Password <br>
                     <input style="height: 5vh; border-radius:3%; text-align: center;" name="password" type="password" placeholder="Enter password" required>
                 </label>
@@ -80,23 +86,17 @@
 
                 <br>
 
-                <label for="gender">Gender <br>
+                <label for="description">About Yourself <br>
+                    <textarea style="height: 8vh; border-radius:3%; text-align: center;" name="descrption" placeholder="Talk about yourself" required></textarea>
+                </label>
+
+                <br>
+
+                <label style="display: block;" for="gender">Gender <br>
                     <input type="radio" >Male
                     <input type="radio" >Female
                 </label>
-
-                <br>
-
-                <label for="email">Email <br>
-                    <input style="height: 5vh; border-radius:3%; text-align: center;" type="email" placeholder="Enter your email" required>
-                </label>
                 
-                <br>
-
-                <label for="description">About Yourself <br>
-                    <textarea style="height: 5vh; border-radius:3%; text-align: center;" name="descrption" placeholder="Talk about yourself" required></textarea>
-                </label>
-
                 <br>
 
                 <input type="submit" value="Register" id="submit-btn">
@@ -104,7 +104,7 @@
                 <br>
 
                 <p><strong>Already Registered?</strong>
-                <br> <a href="#">Log in</a></p>
+                <br> <a href="{% url 'blog-login' %}">Log in</a></p>
 
             </form>
         </div>
@@ -131,9 +131,9 @@
         <ul class="connect-developer">
             <h4>Connect Us</h4>
             <li><a href="#">Facebook    <i style="color: #0000ff;" class="fa fa-facebook"></i> </a></li>
-            <li><a href="#">Twitter    <i style="color: #0000ff;" class="fa fa-twitter"></i> </a></li>
+            <li><a href="https://twitter.com/primU333">Twitter    <i style="color: #0000ff;" class="fa fa-twitter"></i> </a></li>
             <li><a href="#">WhatsApp <i style="color: #00ff00" class="fa fa-whatsapp"></i> </a></li>
-            <li><a href="#">GitHub <i style="color: #ff7300;" class="fa fa-github"></i> </a></li>
+            <li><a href="https://github.com/primU333">GitHub <i style="color: #ff7300;" class="fa fa-github"></i> </a></li>
             <li><a href="#">Website <i style="color: #0000ff;" class="fa fa-firefox"></i></a></li>
 
         </ul>
