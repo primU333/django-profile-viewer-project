@@ -33,32 +33,32 @@
     
             </nav>
         </header>
-       
-    <div class="main">
-        <h4>Django profile viewer project</h4>
-        <p><strong>Wonderful!!! Here we are!</strong> <br> Enjoy your stay here!</p>
-        
-        <div style="margin-top: 20px;" class="img-profile">
-            <img style="width:30vw;" src="https://pic.onlinewebfonts.com/svg/img_508619.png" alt="">
-        </div>
+    {% for info in Info %}
+        <div class="main">
+            <h4>Django profile viewer project</h4>
+            <p><strong>Wonderful!!! Here we are!</strong> <br> Enjoy your stay here!</p>
+            
+            <div style="margin-top: 20px;" class="img-profile">
+                <img style="width:30vw;" src="https://pic.onlinewebfonts.com/svg/img_508619.png" alt="">
+            </div>
 
-        <div class="User-profile">
+            <div class="User-profile">
 
-            <h4>Your Profile</h4>
+                <h4>Your Profile</h4>
 
-            <img src="{% static 'blog/images/matrix.jpg' %}" alt="Your Profile Image" id="profile-image">
-            <br>
-            <p><strong>Name: </strong> #######</p>
-            <br>
-            <p><strong>Email: </strong>#######</p>
-            <br>
-            <p><strong>Gender: </strong>#######</p>
-            <br>
-            <br>
-            <p>#### Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, itaque consectetur unde, aliquam explicabo voluptatum, cupiditate minima molestias t ####</p>
+                <img src="{% static 'blog/images/matrix.jpg' %}" alt="Your Profile Image" id="profile-image">
+                <br>
+                <p><strong>Name: </strong> {{ info.Owner }}</p>
+                <br>
+                <p><strong>Email: </strong>{{ info.Email }}</p>
+                <br>
+                <p><strong>Gender: </strong>{{ info.Gender }}</p>
+                <br>
+                <br>
+                <p>{{ info.About }}</p>
 
-        </div>
-
+            </div>
+        {% endfor %}
         <div class="outro">
             <p>Thank you for reviewing and using our site! <br>
                 <em><q>Keep up the good heart!!</q></em> </p>
