@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+'''from django.contrib.auth.models import User
 
 class Info(models.Model):
     #photo = models.ImageField(upload_to='images')
@@ -9,4 +9,4 @@ class Info(models.Model):
     Owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.Email
+        return self.Email'''
