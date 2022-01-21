@@ -19,7 +19,7 @@
             </div>
 
             <ul class="navLinks">
-                <li> <a href="{% url 'blog-home' %}">Home</a> </li>
+                <li> <a href="{% url 'blog-home' %}">Register</a> </li>
                 <li> <a href="#">Services</a> </li>
                 <li> <a href="#">Blog</a> </li>
                 <li> <a href="#">Projects</a> </li>
@@ -44,6 +44,35 @@
         <div class="Reg-form">
             <p><strong>Log in to view your profile</strong></p>
 
+            <form method="POST"> {% csrf_token %}
+                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <br>
+                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  
+
+                {% for field in login_form %}
+                    <p>
+
+                        {% for error in field.errors%}
+                            <p style="color: #ff0000">{{ error }}</p>
+                        {% endfor %}
+
+                    </p>
+                {% endfor %}
+                        {% if login_form.non_field.errors%}
+                            <p style="color: #ff0000">{{ login_form.field_errors }}</p>
+                        {% endif %}
+                    
+                    
+                
+                <button id="submit-btn" type="submit">Log in</button>
+                    
+                <br> <br>
+                <p><strong>Not Registerd?</strong> <br>
+                    <a href="{% url 'blog-home' %}">Register Now</a></p>
+    
+            </form>
+<!--
             <form action="/" method="POST">
                 
                 <label for="email">Email <br>
@@ -65,6 +94,8 @@
                 <a href="{% url 'blog-home' %}">Register Now</a></p>
 
             </form>
+
+            -->
         </div>
 
         <div class="outro">

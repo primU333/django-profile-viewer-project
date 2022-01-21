@@ -20,7 +20,7 @@
 
             <ul class="navLinks">
                 <li> <a href="{% url 'blog-home' %}">Home</a> </li>
-                <li> <a href="#">Services</a> </li>
+                <li> <a href="{% url 'blog-login' %}">Log in</a> </li>
                 <li> <a href="#">Blog</a> </li>
                 <li> <a href="#">Projects</a> </li>
             </ul>
@@ -61,7 +61,10 @@
                     </p>
                 {% endfor %}
                 <button id="submit-btn" type="submit">Register</button>
-
+                    <br>
+                    <br>
+                <p><strong>Already Registered?</strong>
+                    <br> <a href="{% url 'blog-login' %}">Log in</a></p>
             </form>
 
             <!--
@@ -121,8 +124,6 @@
 
                 <br>
 
-                <p><strong>Already Registered?</strong>
-                <br> <a href="{% url 'blog-login' %}">Log in</a></p>
 
             </form>
             -->
