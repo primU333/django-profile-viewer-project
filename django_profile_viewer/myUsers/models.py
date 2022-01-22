@@ -38,7 +38,7 @@ class ProfileManager(BaseUserManager):
 class Profile(AbstractBaseUser):
     email = models.EmailField(verbose_name="email", max_length=60, unique=True)
     first_name = models.CharField(max_length=20)
-   # about = models.TextField(max_length=500)
+    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     last_name = models.CharField(max_length=20)
     gender = models.CharField(max_length=6)
     username = models.CharField(max_length=30)

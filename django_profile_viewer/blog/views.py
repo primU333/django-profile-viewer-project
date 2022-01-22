@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from myUsers.models import Profile, ProfileManager
-from myUsers.forms import RegistrationForm, LoginForm
+from myUsers.forms import RegistrationForm, LoginForm, userUpdateForm
 
 def index(request):
     context = {}
@@ -57,4 +57,20 @@ def logout_veiw(request):
 
 @login_required
 def home(request):
-    return render(request, 'blog/home.html')
+    if request.method == 'POST':
+        u_form = userUpdateForm(request.POST, request.FILES, instance=request.user)
+       # I_form = ImageUpdateForm(request.POST, request.FILES, instance=request.user.image)
+    
+        if u_form.is_valid():
+            u_form.save()
+            #I_form.save()
+            return redirect('blog-main-page')
+    
+    else:
+        u_form = userUpdateForm(instance=request.user)
+        #I_form = ImageUpdateForm(instance=request.user.image)
+    context = {
+        'u_form': u_form,
+        #'i_form': I_form
+    }
+    return render(request, 'blog/home.html', context)

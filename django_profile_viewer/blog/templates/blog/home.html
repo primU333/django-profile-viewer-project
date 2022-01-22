@@ -47,7 +47,7 @@
 
                         <h4>Your Profile</h4>
 
-                        <img src="{% static 'blog/images/matrix.jpg' %}" alt="Your Profile Image" id="profile-image">
+                        <img src="{{ user.image.url }}" alt="Your Profile Image" id="profile-image">
                         <br>
                         <p><strong>Name: </strong> {{ user.username }}</p>
                         <br>
@@ -58,6 +58,30 @@
                         <br>
                     <!-- <p>{{ info.About }}</p>-->
                
+            </div>
+
+            <div class="Reg-form">
+                <form method="POST" enctype="multipart/form-data"> {% csrf_token %}
+                    <strong>Update your profile information</strong>
+                    <br>
+                    {% for field in u_form %}
+                        <p>
+                            {{field.label_tag}}
+                            {{field}}
+                        </p>
+                    {% endfor %}
+<!--
+                    {% for field in i_form %}
+                        <p>
+                            {{field}}
+    
+                        </p>
+                    {% endfor %}
+    -->
+
+                    <button id="submit-btn" type="submit">Update</button>
+                        <br>
+                </form>
             </div>
         
         <div class="outro">

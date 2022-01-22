@@ -4,7 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 
 
 class ProfileAdmin(UserAdmin):
-	list_display = ('email','username','first_name','gender', 'last_name', 'is_admin','is_staff')
+	list_display = ('email','username', 'image', 'first_name','gender', 'last_name', 'is_admin','is_staff')
 	search_fields = ('email','username',)
 	readonly_fields=('first_name', 'last_name')
 

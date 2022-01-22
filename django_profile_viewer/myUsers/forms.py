@@ -25,3 +25,18 @@ class LoginForm(forms.ModelForm):
 
             if not authenticate(email=email, password=password):
                 raise forms.ValidationError('Invalid login credentials!!')
+
+
+
+class userUpdateForm(forms.ModelForm):
+    email = forms.EmailField(max_length=60)
+
+    class Meta:
+        model = Profile
+        fields = ['email', 'username', 'image']
+
+
+'''class ImageUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['image']'''
