@@ -1,0 +1,1 @@
+web: gunicorn django_profile_viewer.wsgi
