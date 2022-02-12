@@ -1,1 +1,1 @@
-web: gunicorn django_profile_viewer.wsgi.py
+web: gunicorn django_profile_viewer/wsgi.py
