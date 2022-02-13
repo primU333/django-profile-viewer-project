@@ -72,7 +72,7 @@ TEMPLATES = [
 
 AUTH_USER_MODEL = 'myUsers.Profile'
 
-WSGI_APPLICATION = 'django_profile_viewer.wsgi.application'
+WSGI_APPLICATION = 'django_profile/django_profile_viewer.wsgi.application'
 
 
 # Database
