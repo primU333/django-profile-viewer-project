@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+    }
+    
+    body{
+        background-color: #3f3c3c;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f3f0f3;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: #3f3c3c;
+        height: 30vh;
+        border-bottom: solid 1px #000505;
+        margin-bottom: 10px;
+        
+    }
+    
+    #logo{
+        width: 10%;
+        height: 30%;
+        margin: 5px 0 0 5px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .navLinks{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        list-style: none;
+    }
+    
+    .navLinks li a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .navLinks li a:hover{
+        font-size: 30px;
+        color: #000077;
+    }
+    
+    .burger div{
+        background-color: #ffffff;
+        width: 28px;
+        height: 3px;
+        margin: 0 5px 5px 0;
+        transition: all 0.8s ease-out;
+    }
+    
+    .burger{
+        transition: all 0.8s ease-out;
+        z-index: 3;
+        display: none;
+    }
+    
+    .burger-close{
+        transform: rotate(180deg);
+    }
+    
+    .burger-close div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .burger-close div:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-close div:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    
+    .dev-footer{
+        display: flex;
+        justify-content: space-around;
+        background-color: #101010;
+        height: 30vh;
+        border-top: solid 5px #f77205;
+    }
+    
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 20%;
+        list-style: none;
+    }
+    
+    .footer-links h4{
+        color: #ffae00;
+        font-size: 20px;
+    }
+    
+    .footer-links li a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .footer-links li a:hover{
+        color: #0000ff;
+        font-size: 20px;
+    }
+    
+    .connect-developer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 20%;
+        list-style: none;
+    }
+    
+    
+    .connect-developer h4{
+        color: #ffae00;
+        font-size: 20px;
+    }
+    
+    .connect-developer li a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .connect-developer li a:hover{
+        color: #0000ff;
+        font-size: 20px;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        background-color: #101010;
+        align-items: center;
+        color: #ffffff;
+        border-top: solid 1px #0000ff;
+    }
+    
+    footer img{
+        width: 30px;
+        height: 50px;
+    }
+    
+    .main{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       background-color: #3f3c3c;
+    }
+    
+    .main h4{
+        font-size: 30px;
+        color: hsl(37, 90%, 55%);
+    }
+    
+    .User-profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px 5px 15px 5px;
+        height: auto;
+        width: 50%;
+        box-shadow: 1px 5px 5px 1px rgba(0, 030, 0, .5);
+        border-radius: 3%;
+    }
+    
+    .User-profile p{
+        margin: 10px 0 5px;
+        padding: 0 10px 0 10px;
+    }
+    
+    #profile-image{
+        width: 50%;
+        height: 200px;
+        border-radius: 20%;
+    }
+    
+    .outro{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        margin: 5px;
+    }
+    
+    .outro p{
+        margin: 5px 0;
+    }
+    
+    .outro form input{
+        margin: 0 0 5px 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #0000ff;
+    }
+    a:hover{
+        font-size: 20px;
+        color: #000077;
+    }
+    
+    .Reg-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        margin: 5px 0 5px 0;
+        padding: 10px 0 10px 0;
+        box-shadow: 1px 5px 5px 1px rgba(0, 030, 0, .5);
+    }
+
+    .Reg-form label{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Reg-form form input{
+        margin: 5px 0 5px 0;
+    }
+    
+    .Reg-form form #submit-btn{
+        width: 50%;
+        height: 5vh;
+        color: #0000ff;
+        font-size: 20px;
+    }
+    .Reg-form form #submit-btn:hover{
+        background-color: #f77205;
+    }
+    
+    /*input{
+        width: 50vw;
+        height: 5vh;
+        color: #101010;
+        background-color: #ffffff;
+    }
+    
+    .button{
+        width: 20vw;
+        border-radius: 5%;
+        color: #101010
+        background-color: #c0c0c0;
+    }
+    
+    /**********Media Queries*****************/
+    
+    @media only screen and (max-width: 1000px){
+        
+        .navLinks{
+            width: 100%;
+    
+        }
+    }
+    
+    @media only screen and (max-width: 700px){
+    
+        .navLinks{
+            position: absolute;
+            top: 6vh;
+            right: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 40vh;
+            background-color: #3f3c3c;
+            border-radius: 3%;
+            transition: 1s ease-in-out;
+            transform: translateX(100);
+            opacity: 0;
+        }
+    
+        .navLinks-open{
+            opacity: 1;
+        }
+    
+        .burger{
+            display: block;
+            position: absolute;
+            top: 1vh;
+            right: 0;
+        }
+    
+        .heading{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 3vh;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .main h4{
+            font-size: 25px;
+        }
+        .User-profile{
+            width: 80%;
+        }
+    
+        .Reg-form{
+            width: 90%;
+            padding: 10px 10px 10px 10px;
+        }
+    
+        .connect-developer h4{
+            font-size: 15px;
+        }
+    
+        .footer-links h4{
+            font-size: 15px;
+        }
+    }
