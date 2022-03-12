@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-ayy*)&i7t2@p%3g!qckzedduk7c7ohnxj+-m6m0k!1jcnt9x_f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'profile-viewer-app.herokuapp.com'
+
+]
 
 
 # Application definition
