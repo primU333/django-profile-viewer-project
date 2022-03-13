@@ -280,8 +280,9 @@
     @media only screen and (max-width: 700px){
     
         .navLinks{
+            display: none;
             position: absolute;
-            top: 6vh;
+            top: 0;
             right: 0;
             flex-direction: column;
             justify-content: space-around;
@@ -292,18 +293,18 @@
             border-radius: 3%;
             transition: 1s ease-in-out;
             transform: translateX(100);
-            opacity: 0;
         }
     
         .navLinks-open{
-            opacity: 1;
+            display: flex;
         }
     
         .burger{
             display: block;
             position: absolute;
             top: 1vh;
-            right: 0;
+            right: 2px;
+            z-index: 1;
         }
     
         .heading{
