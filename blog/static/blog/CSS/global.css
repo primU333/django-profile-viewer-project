@@ -61,7 +61,7 @@
         z-index: 3;
         display: none;
         border: #f3f0f3 solid 1px;
-        border-radius: 5px;
+        border-radius: 6px;
     }
     
     .burger-close{
@@ -282,7 +282,7 @@
         .navLinks{
             display: none;
             position: absolute;
-            top: 6vh;
+            top: 0;
             right: 0;
             flex-direction: column;
             justify-content: space-around;
@@ -302,7 +302,10 @@
         .burger{
             display: block;
             position: absolute;
+            right: 2px;
             top: 1vh;
+            z-index: 1;
+        
         }
     
         .heading{
