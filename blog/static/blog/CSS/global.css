@@ -282,7 +282,7 @@
         .navLinks{
             display: none;
             position: absolute;
-            top: 0;
+            top: 6vh;
             right: 0;
             flex-direction: column;
             justify-content: space-around;
@@ -303,7 +303,6 @@
             display: block;
             position: absolute;
             top: 1vh;
-            z-index: 1;
         }
     
         .heading{
