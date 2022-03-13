@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-ayy*)&i7t2@p%3g!qckzedduk7c7ohnxj+-m6m0k!1jcnt9x_f
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'profile-viewer-app.herokuapp.com',
-    '127.0.0.1'
+    'profile-viewer-app.herokuapp.com'
 
 ]
 
