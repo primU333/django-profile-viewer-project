@@ -45,9 +45,9 @@
             <p><strong>Log in to view your profile</strong></p>
 
             <form method="POST"> {% csrf_token %}
-                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input class="input" type="email" name="email" id="inputEmail" class="form-control" placeholder="   Email address" required autofocus>
                         <br>
-                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input class="input" type="password" name="password" id="inputPassword" class="form-control" placeholder="  Password" required>
                   
 
                 {% for field in login_form %}
@@ -127,7 +127,7 @@
 
     <footer>
         <img src="{% static 'blog/images/primU.png' %}" alt="dev-logo">
-        <p>copyright of primU developers &copy; 2021</p>
+        <p>copyright of primU developers &copy; 2022</p>
     </footer>
     
 </body>

@@ -52,12 +52,16 @@
         height: 3px;
         margin: 0 5px 5px 0;
         transition: all 0.8s ease-out;
+        margin: 5px;
     }
     
     .burger{
+        cursor: pointer;
         transition: all 0.8s ease-out;
         z-index: 3;
         display: none;
+        border: #f3f0f3 solid 1px;
+        border-radius: 5px;
     }
     
     .burger-close{
@@ -220,6 +224,11 @@
         box-shadow: 1px 5px 5px 1px rgba(0, 030, 0, .5);
     }
 
+    .input{
+        height: 5vh;
+        border: #ffffff solid 1px;
+        border-radius: 10px;
+    }
     .Reg-form label{
         display: flex;
         flex-direction: column;
@@ -235,6 +244,8 @@
     .Reg-form form #submit-btn{
         width: 50%;
         height: 5vh;
+        border: #ffae00 solid 1px;
+        border-radius: 20px;
         color: #0000ff;
         font-size: 20px;
     }
@@ -310,17 +321,41 @@
         .User-profile{
             width: 80%;
         }
+
+        #profile-image{
+            height: auto;
+            width: 50%;
+        }
     
         .Reg-form{
             width: 90%;
             padding: 10px 10px 10px 10px;
         }
+
+        .connect-developer{
+            margin-right: 5px;
+        }
     
         .connect-developer h4{
             font-size: 15px;
         }
-    
+
         .footer-links h4{
             font-size: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 500px){
+
+        .main h4{
+            text-align: center;
+        }
+        .connect-developer li a{
+            font-size: 10px;
+        }
+    
+
+        .footer-links li a{
+            font-size: 10px;
         }
     }
